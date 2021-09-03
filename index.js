@@ -41,28 +41,33 @@ var readlineSync = require('readline-sync');
 // }
 // console.log(add(2,4));
 
-//ex 08
-Result=0;
-function quiz(Ques,Ans)
-{
-  if(Ques===Ans)
-  {
-    Result++;
-    console.log("You are correct!");
-    console.log("Your score is now: "+Result);
-  }
-  else
-  {
-    Result--;
-    console.log("You are Wrong!");
-    console.log("Your score is now: "+Result);
-  }
-}
+// //ex 08
+// Result=0;
+// function quiz(Ques,Ans)
+// {
+//   if(Ques===Ans)
+//   {
+//     Result++;
+//     console.log("You are correct!");
+//     console.log("Your score is now: "+Result);
+//   }
+//   else
+//   {
+//     Result--;
+//     console.log("You are Wrong!");
+//     console.log("Your score is now: "+Result);
+//   }
+// }
 
-var Ques = readlineSync.question("Guess my mood! ");
-var Ans = "sad";
-(quiz(Ques,Ans));
+// var Ques = readlineSync.question("Guess my mood! ");
+// var Ans = "sad";
+// (quiz(Ques,Ans));
 
-var Ques = readlineSync.question("Where do i live? ");
-var Ans  = "delhi";
-quiz(Ques,Ans);
+// var Ques = readlineSync.question("Where do i live? ");
+// var Ans  = "delhi";
+// quiz(Ques,Ans);
+
+// //Ex - 09
+// for(var i = 0;i<5;i++)
+//   console.log("Sam "+i);
+
