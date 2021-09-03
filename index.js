@@ -85,6 +85,19 @@ var readlineSync = require('readline-sync');
 // process.stdout.write(Grocery[2]+"\n");
 // console.log(Grocery[4]);
 
-//ex-11
-for(var i=0;i<5;i++)
-  console.log(Grocery[i]);
+// //ex-11
+// for(var i=0;i<Grocery.length;i++)
+//   console.log(Grocery[i]);
+
+//ex-12
+var Superhero = {
+  Name : "Batman",
+  Color : "Black"
+}
+var otherHero = {
+  Name : "Superman",
+  Color : "Blue"
+}
+
+console.log("His name is "+Superhero.Name+" and his cos color is "+Superhero.Color);
+console.log("His name is "+otherHero.Name+" and his cos color is "+otherHero.Color);
