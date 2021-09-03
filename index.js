@@ -113,7 +113,7 @@ var ans = ["Sameer","20","Delhi","Yes","Quick Maths"];
 
 function funQuiz(UserAns, Ans)
 {
-  if(UserAns===Ans)
+  if(UserAns.toUpperCase()===Ans.toUpperCase())
   {
     Score++;
     console.log("Correct!!!");
