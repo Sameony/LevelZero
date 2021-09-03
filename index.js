@@ -71,10 +71,20 @@ var readlineSync = require('readline-sync');
 // for(var i = 0;i<5;i++)
 //   console.log("Sam "+i);
 
-//Star pattern
-for(var i=1;i<=5;i++)
-{
-  for(var j=1;j<=i;j++)
-    process.stdout.write("*");
-  console.log();
-}
+// //Star pattern
+// for(var i=1;i<=5;i++)
+// {
+//   for(var j=1;j<=i;j++)
+//     process.stdout.write("*");
+//   console.log();
+// }
+
+// //ex-10
+ var Grocery = ["Potato","Tomato","Chilly","Brinjal","Eggs"];
+// console.log(Grocery[0]);
+// process.stdout.write(Grocery[2]+"\n");
+// console.log(Grocery[4]);
+
+//ex-11
+for(var i=0;i<5;i++)
+  console.log(Grocery[i]);
