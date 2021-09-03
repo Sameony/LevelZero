@@ -89,15 +89,45 @@ var readlineSync = require('readline-sync');
 // for(var i=0;i<Grocery.length;i++)
 //   console.log(Grocery[i]);
 
-//ex-12
-var Superhero = {
-  Name : "Batman",
-  Color : "Black"
-}
-var otherHero = {
-  Name : "Superman",
-  Color : "Blue"
+// //ex-12
+// var Superhero = {
+//   Name : "Batman",
+//   Color : "Black"
+// }
+// var otherHero = {
+//   Name : "Superman",
+//   Color : "Blue"
+// }
+
+// console.log("His name is "+Superhero.Name+" and his cos color is "+Superhero.Color);
+// console.log("His name is "+otherHero.Name+" and his cos color is "+otherHero.Color);
+
+
+//Final Questions
+
+var Score = 0;
+QuesList = [
+  "Who am i? ","how old am i? ","Where do i live? ","do i truly live? ", "Complete: 2+2 is 4 minus 1 is 3, ____ ____? "
+]
+var ans = ["Sameer","20","Delhi","Yes","Quick Maths"];
+
+function funQuiz(UserAns, Ans)
+{
+  if(UserAns===Ans)
+  {
+    Score++;
+    console.log("Correct!!!");
+  }
+  else
+  {
+    Score--;
+    console.log("Oops!Better luck next time!");
+  }
 }
 
-console.log("His name is "+Superhero.Name+" and his cos color is "+Superhero.Color);
-console.log("His name is "+otherHero.Name+" and his cos color is "+otherHero.Color);
+for(var i=0;i<ans.length;i++)
+{
+  var UserAns = readlineSync.question(QuesList[i]);
+  funQuiz(UserAns,ans[i]);
+}
+console.log("Your Final Score is "+Score);
